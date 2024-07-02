@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .main-section{
+            
+            background-color: rgb(16, 29, 55);
+            color: white;
+            height: 270px;
+            margin-top: 30px;
+            width: 300px;
+            padding: 10px;
+            border: solid;
+            margin: 8px;
+            text-align: left;
+            
+        }
+
+        .main-section input{
+            width: 280px;
+            margin-bottom: 10px;
+            padding: 5px;
+            margin-top: -8px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sub-but{
+            background-color: rgb(71, 28, 188);
+            color: white;
+            border-color: rgb(42, 24, 159);
+            border-radius: 2px;
+            padding: 8px 16px;
+            cursor: pointer;
+            display: block; 
+            margin: 0 auto 10px;
+        }
+
+        .sub-but:hover{
+            background-color: antiquewhite;
+            color: black;
+            border: white;
+        }
+
+        sup{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="full-page">
+        <div><p><u>Enter your details</u></p></div>
+        <div class="main-section">
+            <p>Username<sup>*</sup></p>
+            <input type="text" class="u-name">
+            <p>Password<sup>*</sup><sub> (*Your passwords will not be stored)</sub></p>
+            <input type="text" class="init-pass">
+            <p>Confirm password<sup>*</sup></p>
+            <input type="password" class="conf-pass">
+            <button class="sub-but" onclick="checkPass()">Submit</button>
+
+
+    </div>
+    </div>
+</body>
+
+<script>
+
+    function checkPass(){
+        var userName = document.querySelector('.u-name').value;
+        var password1 = document.querySelector('.init-pass').value;
+        var password2 = document.querySelector('.conf-pass').value;
+
+        if (password1 === password2) {
+            console.log('Passwords match!');
+            window.location.href="classproject.html";
+        } else {
+            console.log('Passwords do not match!');
+            alert(`Check the password, ${userName}!`);
+            
+        }
+    }
+
+   
+
+</script>
+
+</html>

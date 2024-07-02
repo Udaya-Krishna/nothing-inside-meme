@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSE</title>
+        <style>
+            
+            .top{
+                background-color: grey;
+                display: flex;
+                flex-direction: row;
+                padding-left: 10px;
+                justify-content: space-between;
+                height: 75px;
+                
+            }
+            .top-div{
+                padding-left: 25px;
+            }
+
+            .middle{
+                
+                text-align: center;
+                flex-grow: 1;
+            }
+            .body-section{
+                display: flex;
+                background-color: white;
+                flex: 10px 10px 10px;
+
+            }
+            .roll-section{
+                background-color: beige;
+                color: brown;
+                font-size: 28px;
+            }
+
+            .video-frame{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .i-frame{
+                
+                width: 450px;
+                height: 250px;
+            }
+        </style>
+    </head>
+    <body bgcolor="beige">
+        
+        <div class="roll-section">
+            <marquee behavior="alternate" scrollamount="5">Welcome folks</marquee>
+        </div>
+    
+        <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/ujtqKq7HkWc?rel=0"  allow="autoplay; encrypted-media" allowfullscreen rel="0" class="i-frame"></iframe>
+
+        </div>
+
+        <p class="feedback-box">Submit your feedback</p>
+        <p class="fb-ip"><input type="text"></p>
+        <button class="sub-button" onclick="alert('Oops! Submit button is currently unavailable')">Submit</button>
+
+
+        <script>
+
+        </script>
+    </body>
+</html>
