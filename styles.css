@@ -1,0 +1,41 @@
+.top{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    justify-content: space-between;
+    height: 75px;
+    
+}
+.top-div{
+    padding-left: 25px;
+}
+
+.middle{
+    
+    text-align: center;
+    flex-grow: 1;
+}
+.body-section{
+    display: flex;
+    background-color: white;
+    flex: 10px 10px 10px;
+
+}
+.roll-section{
+    background-color: beige;
+    color: brown;
+    font-size: 28px;
+}
+
+.video-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-frame{
+    
+    width: 450px;
+    height: 250px;
+}
